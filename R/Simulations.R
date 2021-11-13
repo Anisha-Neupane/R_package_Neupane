@@ -1,1 +1,1 @@
-Running simulation
+I will carry out mcmc analysis for data simulation.
