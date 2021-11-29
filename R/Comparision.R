@@ -1,1 +1,1 @@
-I will use some test statistics which numerically summarize different aspects of dataset. The output wll be mean, median, 1st, and 90th percentile.
+# I will use some test statistics which numerically summarize different aspects of dataset. The output wll be mean, median, 1st, and 90th percentile.

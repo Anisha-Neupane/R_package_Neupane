@@ -1,1 +1,1 @@
-I will carry out mcmc analysis for data simulation.
+# I will carry out mcmc analysis for data simulation.
