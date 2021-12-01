@@ -1,2 +1,5 @@
-# I will use function sim.fbd.taxa to simulate tree for data visualization.
-rangeplot.asymmetric(trees[[1]])
+# I will use function rangeplot.asymmetric to simulate tree for data visualization.
+#' 
+i=1
+for (i in 1:20)
+rangeplot.asymmetric(trees[[i]])
