@@ -10,10 +10,10 @@
 all <- read_tsv("Data/ants_timevary.log") 
 all
 
-lambda <- all$speciation_rate
-mu <- all$extinction_rate
-psi <- all$psi
-times <- all$origin_time
+#lambda <- all$speciation_rate
+#mu <- all$extinction_rate
+#psi <- all$psi
+#times <- all$origin_time
 
 i=1
 while(i <= 20){
