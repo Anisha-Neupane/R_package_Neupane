@@ -1,4 +1,5 @@
-# I will use sim.fbd.taxa to simulate data.
+#' Data simulations
+#' use sim.fbd.taxa to simulate data.
 #' @param n Number of extant sampled tips.
 #' @param numbsim Number of trees to simulate.
 #' @param frac fraction.
