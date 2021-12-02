@@ -4,7 +4,7 @@
 #' @param frac fraction.
 #' @return trees[i]
 #' @usage 
-#' sim (10, 2 , 0.01)
+#' tre (10, 2 , 0.01)
 #' 
 
 tre <- function(n, numbsim, frac) { 
