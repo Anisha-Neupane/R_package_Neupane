@@ -5,10 +5,10 @@
 #' @param frac fraction.
 #' @return trees[i]
 #' @usage 
-#' tre (10, 2 , 0.01)
+#' Simulation (10, 2 , 0.01)
 #' 
 
-tre <- function(n, numbsim, frac) { 
+Simulation <- function(n, numbsim, frac) { 
 all <- read_tsv("Data/ants_timevary.log")   
 all
 
