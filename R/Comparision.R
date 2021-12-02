@@ -1,4 +1,8 @@
 # Comparision with emperical mean.
+#' @param emperical_data the emeprical data from the origin.
+#' @return emperical_data
+#' @usage 
+#' emperical_data (all$origin_time)
 for (i in 1:20){ 
 simulated_data[i] <- trees[[i]]$root.edge
 

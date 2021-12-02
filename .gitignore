@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+NeupaneRpackage.Rcheck/
+NeupaneRpackage*.tar.gz
+NeupaneRpackage*.tgz

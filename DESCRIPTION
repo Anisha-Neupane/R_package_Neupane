@@ -3,7 +3,7 @@ Title: An R package for posterior predictive.
 Version: 0.0.0.9000
 Authors@R: 
     person("Anisha", "Neupane", , "anisha.neupane@selu.com", role = c("aut", "cre"))
-Description: This package simulates data, compare the dataset with origin, simulate the tree and calculate the effcet size.
+Description: This package simulates data, compare the dataset with origin, simulate the tree and calculate the effect size.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
