@@ -1,7 +1,7 @@
 # Comparision with emperical mean.
-for (i in 1:20){ 
-simulated_data[i] <- trees[[i]]$root.edge
-}
+for (i in 1:20)
+# simulated_data[i] <- trees[[i]]$root.edge
+
 emperical_data <- all$origin_time
 emp_mean <- mean(emperical_data)
 
