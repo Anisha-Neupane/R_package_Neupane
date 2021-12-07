@@ -23,3 +23,4 @@ trees[i] <- (sim.fbd.taxa(n, numbsim, lambda[i], mu[i], psi[i], frac))
 i <- i +1 
 return(trees)
 }
+trees
