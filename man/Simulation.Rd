@@ -5,7 +5,10 @@
 \title{Data simulations
 use sim.fbd.taxa to simulate data.}
 \usage{
-Simulation (10, 2 , 0.01)
+i = 1
+while (i <=20) { 
+trees[i] <- (Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
+}
 }
 \arguments{
 \item{n}{Number of extant sampled tips.}

@@ -7,7 +7,7 @@ use function rangeplot.asymmetric to simulate tree for data visualization.}
 \usage{
 i = 1
 for (i in 1:20) {
-posterior_trace(i)
+posterior_trace(1)
 }
 }
 \arguments{

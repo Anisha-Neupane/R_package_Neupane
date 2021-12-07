@@ -5,22 +5,13 @@
 #' @param frac fraction.
 #' @return trees[i]
 #' @usage 
-#' Simulation (10, 2 , 0.01)
-#' 
+#' i = 1
+#' while (i <=20) { 
+#' trees[i] <- (Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
+#' }
 
-Simulation <- function(n, numbsim, frac) { 
-all <- read_tsv("Data/ants_timevary.log")   
-all
+Simulation <- function(n, numbsim, lambda, mu, psi, frac){ 
+  result <- sim.fbd.taxa(n, numbsim, lambda, mu, psi, frac)
+  return(result) }
 
-lambda <- all$speciation_rate
-mu <- all$extinction_rate
-psi <- all$psi
-times <- all$origin_time
-
-i=1
-while(i <= 20)
-trees[i] <- (sim.fbd.taxa(n, numbsim, lambda[i], mu[i], psi[i], frac))
-i <- i +1 
-return(trees)
-}
-trees
+  

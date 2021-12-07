@@ -4,16 +4,13 @@
 \alias{Comparision}
 \title{use of ggplot}
 \usage{
-Comparision (x) 
-for (i in 1:20) { 
-simulated_data[[i]] <- trees[[i]]$root.edge 
-}
+Comparision(datasdf = datas)
 }
 \arguments{
-\item{simulated_data}{the simulated data}
+\item{datasdf}{Default dataset to use for plot.}
 }
 \value{
-plot
+p
 }
 \description{
 use of ggplot
