@@ -15,4 +15,3 @@ emp_mean <- mean(emperical_data)
 plot <- ggplot(data.frame(x = simulated_data), aes(x)) + geom_density() + geom_vline (xintercept = emp_mean, linetype = "dotted", col = 3)
 return(plot)
 }
-plot
