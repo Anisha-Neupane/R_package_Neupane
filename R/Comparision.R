@@ -10,7 +10,7 @@
 
 
 Comparision <- function(simulated_data){
-  emperical_data <- all$origin_time
+emperical_data <- all$origin_time
 emp_mean <- mean(emperical_data)
 plot <- ggplot(data.frame(x = simulated_data), aes(x)) + geom_density() + geom_vline (xintercept = emp_mean, linetype = "dotted", col = 3)
 return(plot)
