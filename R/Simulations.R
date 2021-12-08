@@ -10,6 +10,7 @@
 #' trees[i] <- (Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
 #' }
 
+
 Simulation <- function(n, numbsim, lambda, mu, psi, frac){ 
   result <- FossilSim::sim.fbd.taxa(n, numbsim, lambda, mu, psi, frac)
   return(result) }

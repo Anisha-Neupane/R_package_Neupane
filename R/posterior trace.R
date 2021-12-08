@@ -8,6 +8,7 @@
 #' posterior_trace(1)
 #' } 
 
+
 treeplot <- function(n){
 plot <- FossilSim::rangeplot.asymmetric(trees[[n]])
 return(plot) 
