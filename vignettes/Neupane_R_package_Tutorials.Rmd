@@ -65,8 +65,9 @@ Now lets simulate the data:
 i = 1
 trees <- vector()
 while (i <=20) { 
-trees[i] <- c(NeupaneRpackage::Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
+trees[i] <- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
 print(trees[i])
+i <- i + 1
 }
 ```
 
@@ -77,7 +78,7 @@ for (i in 1:20) {
 simulated_data <- trees[[i]]$root.edge
 }
 emperical_data <- all$origin_time
-mean <- mean(emperical_data)
+meane <- mean(emperical_data)
 means <- mean(simulated_data)
 
 ```
@@ -86,32 +87,32 @@ Data visualization using function treeplot:
 ```{r}
 i = 1
 for (i in 1:20) {
-posterior_trace(i)
+treeplot(i)
 } 
 
 ```
 
 output of visualization:
 ```{r}
-posterior_trace(1)
+treeplot(1)
 ```
 
 Compare the simulated data with emperical data:
 
 Create a dataframe to store all your data:
 ```{r}
-datas <- data.frame(c(simulated_data, emperical_data, mean, means))
+datas <- data.frame(c(simulated_data, emperical_data, meane, means))
 
 ```
 
 Now using the function comparison:
 ```{r}
-Comparision(datasdf = datas)
+comparision(datasdf = datas)
 ```
 
 Including plots:
 ```{r datas, echo = FALSE}
-Comparision(datasdf = datas)
+comparision(datasdf = datas)
 ```
 
 Calculating the effect size:

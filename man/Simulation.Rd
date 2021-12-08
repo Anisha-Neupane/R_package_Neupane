@@ -18,7 +18,7 @@ trees[i] <- (Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .0
 \item{frac}{fraction.}
 }
 \value{
-trees\link{i}
+result
 }
 \description{
 Data simulations
