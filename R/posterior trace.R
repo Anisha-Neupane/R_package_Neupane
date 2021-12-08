@@ -6,7 +6,7 @@
 #' @usage 
 #' i = 1
 #' for (i in 1:20) {
-#' posterior_trace(1)
+#' treeplot(1)
 #' } 
 
 
