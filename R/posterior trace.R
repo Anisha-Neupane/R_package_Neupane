@@ -2,6 +2,7 @@
 #' use function rangeplot.asymmetric to simulate tree for data visualization.
 #' @param n number from 1 to 20
 #' @return trees 
+#' @export
 #' @usage 
 #' i = 1
 #' for (i in 1:20) {

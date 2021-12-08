@@ -2,6 +2,7 @@
 #' Effect_size
 #' @param datasdf datas 
 #' @return eff_size
+#' @export
 #' @usage 
 #' Effect_size(datasdf = datas)
 #' 

@@ -20,8 +20,11 @@ library(tidyverse)
 
 You might need to install some fbd packages for this package to run.
 
-```{r, eval = FALSE}
+```{r}
 install.packages("FossilSim")
+```
+```{r}
+library(FossilSim)
 ```
 
 Now, we install my R package.
@@ -29,32 +32,95 @@ Now, we install my R package.
 ```{r}
 devtools::install_github("Anisha-Neupane/R_package_Neupane")
 library(NeupaneRpackage)
+
+```
+
+```{r}
+devtools::load_all()
 ```
 
 Let us download some data for our package:
+```{r}
 
+download.file(url = "https://raw.githubusercontent.com/Anisha-Neupane/R_package_Neupane/master/Data/ants_timevary.log", destfile = "/cloud/project/vignettes/Ants_timevary.log")
 
+```
 
+Load the data:
+```{r}
+all <- read_tsv("/cloud/project/vignettes/Ants_timevary.log")
+all
+```
+
+Rename speciation_rate, extinction_rate and psi:
+```{r}
+lambda <- all$speciation_rate
+mu <- all$extinction_rate
+psi <- all$psi
+
+```
+
+Now lets simulate the data:
+```{r}
+i = 1
+trees <- vector()
+while (i <=20) { 
+trees[i] <- c(NeupaneRpackage::Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
+print(trees[i])
+}
+```
+
+Lets collect the simulated data:
+```{r}
+i = 1  
+for (i in 1:20) { 
+simulated_data <- trees[[i]]$root.edge
+}
+emperical_data <- all$origin_time
+mean <- mean(emperical_data)
+means <- mean(simulated_data)
+
+```
+
+Data visualization using function treeplot:
+```{r}
+i = 1
+for (i in 1:20) {
+posterior_trace(i)
+} 
+
+```
+
+output of visualization:
+```{r}
+posterior_trace(1)
+```
+
+Compare the simulated data with emperical data:
+
+Create a dataframe to store all your data:
+```{r}
+datas <- data.frame(c(simulated_data, emperical_data, mean, means))
+
+```
+
+Now using the function comparison:
+```{r}
+Comparision(datasdf = datas)
+```
+
+Including plots:
+```{r datas, echo = FALSE}
+Comparision(datasdf = datas)
+```
+
+Calculating the effect size:
+```{r}
+Effect_size(datasdf = datas)
+```
 ## Working Example
 +An example of each function that works.
 +Say something about why this is a good thing to do.
 +something about expected output.
 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

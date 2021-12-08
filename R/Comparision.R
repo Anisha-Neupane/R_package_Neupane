@@ -1,7 +1,8 @@
 # Comparision of data
 #' use of ggplot
 #' @param datasdf Default dataset to use for plot.
-#' @return p
+#' @return q
+#' @export
 #' @usage 
 #' Comparision(datasdf = datas)
 

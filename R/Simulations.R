@@ -3,7 +3,8 @@
 #' @param n Number of extant sampled tips.
 #' @param numbsim Number of trees to simulate.
 #' @param frac fraction.
-#' @return trees[i]
+#' @return result
+#' @export
 #' @usage 
 #' i = 1
 #' while (i <=20) { 
