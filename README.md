@@ -1,7 +1,5 @@
 # R_package_Neupane
-# Project for GBIO408
-
-# Working with Simran Baruwal.
+# Project for GBIO408, Working with Simran Baruwal.
 
 Package simulates data and carry out test statistics which numerically summarize different aspects of dataset. It provides a good view on model adequacy.
 
@@ -10,7 +8,7 @@ Package simulates data and carry out test statistics which numerically summarize
 2. Setup
 3. Different functions and how it works
 
-#Installation
+# Installation
 Some packages needs to be installed prior to run this package.
 ```{r}
 install.packages("tidyverse","ggplot2","devtools")
