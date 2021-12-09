@@ -6,7 +6,7 @@
 #' @return result
 #' @export
 #' @usage 
-#'Simulation(n = 10, numbsim = 2, lambda = 0.01806175, mu = 1.078013e-03, psi = 5.172419e-02, frac = .01))
+#' Simulation(n = 10, numbsim = 1, lambda = 0.01806175, mu = 1.078013e-03, psi = 5.172419e-02, frac = .01))
 #' 
 
 
