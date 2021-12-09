@@ -1,11 +1,11 @@
 # R_package_Neupane
-##Project for GBIO408
+# Project for GBIO408
 
-#Working with Simran Baruwal.
+# Working with Simran Baruwal.
 
 Package simulates data and carry out test statistics which numerically summarize different aspects of dataset. It provides a good view on model adequacy.
 
-#Contents
+# Contents
 1. Installation
 2. Setup
 3. Different functions and how it works
@@ -20,10 +20,10 @@ This package is based on FossilSim, so it must be installed.
 ```{r}
 install.packages("FossilSim")
 ```
-#Setup
+# Setup
 To download the data, use download.files and enter url from git.
 
-#Functions and its use:
+# Functions and its use:
 There are four functions created for this package:
 
 1. Simulation for simulating data and create SAtrees.
