@@ -9,9 +9,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+sim.fbd Functions:
+
+FossilSim can be used to simulate trees directly from a fossilized-birth death process using the sim.fbd family of functions, whose interface is similar to the sim.bd functions in TreeSim. These functions return a list of SAtree objects, since the simulated trees may contain sampled ancestors represented as tips with zero-length branches.
+
 ## Installation
 
-Load in common libraries used by this package.
+You might need to install tidyverse and ggplot2.
+
+```{r}
+install.packages("tidyverse")
+install.packages("ggplot2")
+```
+
+Load in the libraries used by this package.
 
 ``` {r}
 library(ggplot2)
@@ -23,6 +34,9 @@ You might need to install some fbd packages for this package to run.
 ```{r}
 install.packages("FossilSim")
 ```
+
+Load the package we just downloaded.
+
 ```{r}
 library(FossilSim)
 ```
@@ -35,6 +49,8 @@ library(NeupaneRpackage)
 
 ```
 
+Now, we load my R package using devtools. load_all loads a package. It roughly simulates what happens when a package is installed and loaded with library().
+
 ```{r}
 devtools::load_all()
 ```
@@ -46,9 +62,9 @@ download.file(url = "https://raw.githubusercontent.com/Anisha-Neupane/R_package_
 
 ```
 
-Load the data:
+Load the data using read_tsv. 
 ```{r}
-all <- read_tsv("/cloud/project/vignettes/Ants_timevary.log")
+all <- read_tsv("/cloud/project/vignettes/Ants_timevary.log")  #read_tsv is used for tab separated ("\") values.
 all
 ```
 
