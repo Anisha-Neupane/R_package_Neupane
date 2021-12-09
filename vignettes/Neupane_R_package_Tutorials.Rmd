@@ -65,7 +65,7 @@ Now lets simulate the data:
 i = 1
 trees <- vector()
 while (i <=20) { 
-trees[i] <- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
+trees[i] <- c(NeupaneRpackage::Simulation(n = 10, numbsim = 1, lambda[i], mu[i], psi[i], frac = .01))
 print(trees[i])
 i <- i + 1
 }
@@ -74,8 +74,9 @@ i <- i + 1
 Lets collect the simulated data:
 ```{r}
 i = 1  
+simulated_data <- vector()
 for (i in 1:20) { 
-simulated_data <- trees[[i]]$root.edge
+simulated_data[i] <- c(trees[[i]]$root.edge)
 }
 emperical_data <- all$origin_time
 meane <- mean(emperical_data)
