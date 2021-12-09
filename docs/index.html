@@ -67,12 +67,50 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
+
 <div class="section level1">
 <div class="page-header"><h1 id="r_package_neupane">R_package_Neupane<a class="anchor" aria-label="anchor" href="#r_package_neupane"></a>
 </h1></div>
-<p>Project for GBIO408</p>
-<p>Working with Simran Baruwal.</p>
 </div>
+<div class="section level1">
+<h1 id="project-for-gbio408-working-with-simran-baruwal">Project for GBIO408, Working with Simran Baruwal.<a class="anchor" aria-label="anchor" href="#project-for-gbio408-working-with-simran-baruwal"></a>
+</h1>
+<p>Package simulates data and carry out test statistics which numerically summarize different aspects of dataset. It provides a good view on model adequacy.</p>
+</div>
+<div class="section level1">
+<h1 id="contents">Contents<a class="anchor" aria-label="anchor" href="#contents"></a>
+</h1>
+<ol style="list-style-type: decimal">
+<li>Installation</li>
+<li>Setup</li>
+<li>Different functions and how it works</li>
+</ol>
+</div>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
+<p>Some packages needs to be installed prior to run this package.</p>
+<pre class="{r}"><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span>,<span class="st">"ggplot2"</span>,<span class="st">"devtools"</span><span class="op">)</span></code></pre>
+<p>This package is based on FossilSim, so it must be installed.</p>
+<pre class="{r}"><code><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"FossilSim"</span><span class="op">)</span></code></pre>
+</div>
+<div class="section level1">
+<h1 id="setup">Setup<a class="anchor" aria-label="anchor" href="#setup"></a>
+</h1>
+<p>To download the data, use download.files and enter url from git.</p>
+</div>
+<div class="section level1">
+<h1 id="functions-and-its-use">Functions and its use:<a class="anchor" aria-label="anchor" href="#functions-and-its-use"></a>
+</h1>
+<p>There are four functions created for this package:</p>
+<ol style="list-style-type: decimal">
+<li>Simulation for simulating data and create SAtrees.</li>
+<li>treeplot for plotting SAtree object.</li>
+<li>comparision for comparing simulated value and emperical value.</li>
+<li>effect_size for calculating how many standard deviations away from the median is the observed value.</li>
+</ol>
+</div>
+
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
