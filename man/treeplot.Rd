@@ -5,10 +5,7 @@
 \title{Data Visualization
 use function rangeplot.asymmetric to simulate tree for data visualization.}
 \usage{
-i = 1
-for (i in 1:20) {
 treeplot(1)
-}
 }
 \arguments{
 \item{n}{number from 1 to 20}
