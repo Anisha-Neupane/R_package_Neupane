@@ -4,10 +4,8 @@
 #' @return trees 
 #' @export
 #' @usage 
-#' i = 1
-#' for (i in 1:20) {
 #' treeplot(1)
-#' } 
+#' 
 
 
 treeplot <- function(n){

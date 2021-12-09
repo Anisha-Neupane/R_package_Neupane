@@ -98,7 +98,7 @@
 <p>You might need to install some fbd packages for this package to run.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"FossilSim"</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## Installing package into '/tmp/RtmpQJ0f12/temp_libpath30167f2673e8'</span>
+<pre><code><span class="co">## Installing package into '/tmp/RtmpJ7Atfi/temp_libpath6e064e90d46'</span>
 <span class="co">## (as 'lib' is unspecified)</span></code></pre>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">FossilSim</span><span class="op">)</span></code></pre></div>
@@ -108,9 +108,9 @@
 <pre><code><span class="co">## Using github PAT from envvar GITHUB_PAT</span></code></pre>
 <pre><code><span class="co">## Downloading GitHub repo Anisha-Neupane/R_package_Neupane@HEAD</span></code></pre>
 <pre><code>##   
-   checking for file ‘/tmp/RtmperzY9d/remotes38fb630c1153/Anisha-Neupane-R_package_Neupane-0c7523d/DESCRIPTION’ ...
+   checking for file ‘/tmp/RtmpJewTpN/remotesb6511146bd7/Anisha-Neupane-R_package_Neupane-17519e1/DESCRIPTION’ ...
   
- [32m✓ [39m   [38;5;247mchecking for file ‘/tmp/RtmperzY9d/remotes38fb630c1153/Anisha-Neupane-R_package_Neupane-0c7523d/DESCRIPTION’ [39m [36m [39m
+ [32m✓ [39m   [38;5;247mchecking for file ‘/tmp/RtmpJewTpN/remotesb6511146bd7/Anisha-Neupane-R_package_Neupane-17519e1/DESCRIPTION’ [39m [36m [39m
 ## 
   
  [38;5;247m─ [39m [38;5;247m   [39m [38;5;247mpreparing ‘NeupaneRpackage’: [39m [36m [39m
@@ -132,7 +132,7 @@
   
    
 ## </code></pre>
-<pre><code><span class="co">## Installing package into '/tmp/RtmpQJ0f12/temp_libpath30167f2673e8'</span>
+<pre><code><span class="co">## Installing package into '/tmp/RtmpJ7Atfi/temp_libpath6e064e90d46'</span>
 <span class="co">## (as 'lib' is unspecified)</span></code></pre>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">NeupaneRpackage</span><span class="op">)</span></code></pre></div>
@@ -194,244 +194,224 @@
 <code class="sourceCode R"><span class="va">i</span> <span class="op">=</span> <span class="fl">1</span>
 <span class="va">trees</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/vector.html" class="external-link">vector</a></span><span class="op">(</span><span class="op">)</span>
 <span class="kw">while</span> <span class="op">(</span><span class="va">i</span> <span class="op">&lt;=</span><span class="fl">20</span><span class="op">)</span> <span class="op">{</span> 
-<span class="va">trees</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu">NeupaneRpackage</span><span class="fu">::</span><span class="fu"><a href="../reference/Simulation.html">Simulation</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">20</span>, numbsim <span class="op">=</span> <span class="fl">2</span>, <span class="va">lambda</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, <span class="va">mu</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, <span class="va">psi</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, frac <span class="op">=</span> <span class="fl">.01</span><span class="op">)</span><span class="op">)</span>
+<span class="va">trees</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu">NeupaneRpackage</span><span class="fu">::</span><span class="fu"><a href="../reference/Simulation.html">Simulation</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">10</span>, numbsim <span class="op">=</span> <span class="fl">1</span>, <span class="va">lambda</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, <span class="va">mu</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, <span class="va">psi</span><span class="op">[</span><span class="va">i</span><span class="op">]</span>, frac <span class="op">=</span> <span class="fl">.01</span><span class="op">)</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">trees</span><span class="op">[</span><span class="va">i</span><span class="op">]</span><span class="op">)</span>
 <span class="va">i</span> <span class="op">&lt;-</span> <span class="va">i</span> <span class="op">+</span> <span class="fl">1</span>
 <span class="op">}</span></code></pre></div>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
 <pre><code><span class="co">## [[1]]</span>
 <span class="co">## </span>
-<span class="co">## Phylogenetic tree with 6314 tips and 6313 internal nodes.</span>
+<span class="co">## Phylogenetic tree with 3040 tips and 3039 internal nodes.</span>
 <span class="co">## </span>
 <span class="co">## Tip labels:</span>
-<span class="co">##   t1326_1, t2103_5, t1270_5, t1655_2, t1982_5, t1562_2, ...</span>
+<span class="co">##   t69_3, t631_2, t645_1, t273_2, t770_6, t368_3, ...</span>
 <span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
+<span class="co">## Rooted; includes branch lengths.</span>
 <span class="co">## </span>
-<span class="co">## Phylogenetic tree with 2469 tips and 2468 internal nodes.</span>
+<span class="co">## [[1]]</span>
 <span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t529_1, t1117_1, t1673_3, t1041_2, t1750_1, t361_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 806 tips and 805 internal nodes.</span>
+<span class="co">## Phylogenetic tree with 1212 tips and 1211 internal nodes.</span>
 <span class="co">## </span>
 <span class="co">## Tip labels:</span>
-<span class="co">##   t308_1, t914_1, t695_1, t1325_1, t1185_1, t700_1, ...</span>
+<span class="co">##   t753_1, t1018_2, t501_1, t901_1, t106_1, t270_1, ...</span>
 <span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
+<span class="co">## Rooted; includes branch lengths.</span>
 <span class="co">## </span>
-<span class="co">## Phylogenetic tree with 241 tips and 240 internal nodes.</span>
+<span class="co">## [[1]]</span>
 <span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t928_1, t1943_1, t1566_1, t687_1, t1159_2, t289_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 41 tips and 40 internal nodes.</span>
+<span class="co">## Phylogenetic tree with 405 tips and 404 internal nodes.</span>
 <span class="co">## </span>
 <span class="co">## Tip labels:</span>
-<span class="co">##   t539_1, t732_1, t785_1, t508_1, t1890_1, t824_2, ...</span>
+<span class="co">##   t559_1, t345_1, t440_1, t456_1, t347_1, t241_1, ...</span>
 <span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
+<span class="co">## Rooted; includes branch lengths.</span>
 <span class="co">## </span>
-<span class="co">## Phylogenetic tree with 24 tips and 23 internal nodes.</span>
+<span class="co">## [[1]]</span>
 <span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t119_1, t928_1, t921_1, t800_1, t342_1, t768_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 25 tips and 24 internal nodes.</span>
+<span class="co">## Phylogenetic tree with 107 tips and 106 internal nodes.</span>
 <span class="co">## </span>
 <span class="co">## Tip labels:</span>
-<span class="co">##   t869_1, t1728_1, t1083_1, t1366_1, t1313_1, t1034_1, ...</span>
+<span class="co">##   t561_1, t720_1, t802_2, t265_1, t483_2, t767_1, ...</span>
 <span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
+<span class="co">## Rooted; includes branch lengths.</span>
 <span class="co">## </span>
-<span class="co">## Phylogenetic tree with 24 tips and 23 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1683_1, t1094_1, t1965_1, t37_1, t1404_1, t1802_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 24 tips and 23 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t320_1, t1998_1, t1243_1, t1839_1, t707_1, t1340_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 25 tips and 24 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t431_1, t935_1, t233_1, t317_1, t740_1, t1482_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 23 tips and 22 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1208_1, t1544_1, t1736_1, t58_1, t965_1, t881_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 24 tips and 23 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t15_1, t1620_1, t904_1, t723_1, t1411_1, t1122_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 27 tips and 26 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1877_1, t265_1, t1844_1, t1057_1, t734_1, t380_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 25 tips and 24 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1213_1, t1680_1, t1791_1, t1718_1, t243_1, t1090_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 22 tips and 21 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1803_1, t697_1, t196_1, t1285_1, t1406_1, t1932_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 24 tips and 23 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t663_1, t632_1, t2048_1, t239_1, t1661_1, t268_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 22 tips and 21 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t267_1, t1697_1, t306_1, t1903_1, t1815_1, t525_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 22 tips and 21 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1189_1, t789_1, t930_1, t60_1, t2023_1, t645_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
-<span class="co">## </span>
-<span class="co">## Phylogenetic tree with 26 tips and 25 internal nodes.</span>
-<span class="co">## </span>
-<span class="co">## Tip labels:</span>
-<span class="co">##   t1143_1, t834_1, t1402_1, t997_1, t1315_1, t316_1, ...</span>
-<span class="co">## </span>
-<span class="co">## Rooted; includes branch lengths.</span></code></pre>
-<pre><code><span class="co">## Warning in trees[i] &lt;- c(NeupaneRpackage::Simulation(n = 20, numbsim = 2, :</span>
-<span class="co">## number of items to replace is not a multiple of replacement length</span></code></pre>
-<pre><code><span class="co">## [[1]]</span>
+<span class="co">## [[1]]</span>
 <span class="co">## </span>
 <span class="co">## Phylogenetic tree with 21 tips and 20 internal nodes.</span>
 <span class="co">## </span>
 <span class="co">## Tip labels:</span>
-<span class="co">##   t1200_1, t301_1, t1023_1, t600_1, t672_1, t714_1, ...</span>
+<span class="co">##   t667_1, t684_1, t818_1, t694_1, t601_1, t813_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 12 tips and 11 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t485_1, t547_1, t168_1, t966_1, t4_1, t906_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 11 tips and 10 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t923_1, t611_1, t621_1, t321_1, t961_1, t344_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 14 tips and 13 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t577_1, t700_1, t886_1, t618_1, t450_1, t26_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 14 tips and 13 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t552_1, t498_1, t354_1, t568_1, t70_1, t49_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 12 tips and 11 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t690_1, t406_1, t254_1, t803_1, t67_1, t307_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 15 tips and 14 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t675_1, t460_1, t291_1, t377_1, t383_1, t312_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 10 tips and 9 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t483_1, t976_1, t666_1, t662_1, t618_1, t759_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 11 tips and 10 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t171_1, t536_1, t596_1, t321_1, t391_1, t181_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 13 tips and 12 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t304_1, t452_1, t858_1, t105_1, t280_1, t42_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 11 tips and 10 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t568_1, t223_1, t730_1, t950_1, t499_1, t566_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 12 tips and 11 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t1030_1, t808_1, t575_1, t752_1, t805_1, t709_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 12 tips and 11 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t893_1, t203_1, t870_1, t284_1, t543_1, t953_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 10 tips and 9 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t696_1, t764_1, t212_1, t904_1, t441_1, t86_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 11 tips and 10 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t361_1, t869_1, t826_1, t864_1, t53_1, t648_1, ...</span>
+<span class="co">## </span>
+<span class="co">## Rooted; includes branch lengths.</span>
+<span class="co">## </span>
+<span class="co">## [[1]]</span>
+<span class="co">## </span>
+<span class="co">## Phylogenetic tree with 11 tips and 10 internal nodes.</span>
+<span class="co">## </span>
+<span class="co">## Tip labels:</span>
+<span class="co">##   t503_1, t646_1, t500_1, t403_1, t455_1, t901_1, ...</span>
 <span class="co">## </span>
 <span class="co">## Rooted; includes branch lengths.</span></code></pre>
 <p>Lets collect the simulated data:</p>
-<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">i</span> <span class="op">=</span> <span class="fl">1</span>  
+<span class="va">simulated_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/vector.html" class="external-link">vector</a></span><span class="op">(</span><span class="op">)</span>
 <span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span> <span class="op">{</span> 
-<span class="va">simulated_data</span> <span class="op">&lt;-</span> <span class="va">trees</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">root.edge</span>
+<span class="va">simulated_data</span><span class="op">[</span><span class="va">i</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">trees</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">root.edge</span><span class="op">)</span>
 <span class="op">}</span>
 <span class="va">emperical_data</span> <span class="op">&lt;-</span> <span class="va">all</span><span class="op">$</span><span class="va">origin_time</span>
 <span class="va">meane</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">emperical_data</span><span class="op">)</span>
 <span class="va">means</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">simulated_data</span><span class="op">)</span></code></pre></div>
 <p>Data visualization using function treeplot:</p>
-<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">i</span> <span class="op">=</span> <span class="fl">1</span>
 <span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span> <span class="op">{</span>
 <span class="fu"><a href="../reference/treeplot.html">treeplot</a></span><span class="op">(</span><span class="va">i</span><span class="op">)</span>
 <span class="op">}</span> </code></pre></div>
 <p><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-1.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-2.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-3.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-4.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-5.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-6.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-7.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-8.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-9.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-10.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-11.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-12.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-13.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-14.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-15.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-16.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-17.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-18.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-19.png" width="700"><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-11-20.png" width="700"></p>
 <p>output of visualization:</p>
-<div class="sourceCode" id="cb67"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/treeplot.html">treeplot</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></code></pre></div>
 <p><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-12-1.png" width="700"></p>
 <pre><code><span class="co">## NULL</span></code></pre>
 <p>Compare the simulated data with emperical data:</p>
 <p>Create a dataframe to store all your data:</p>
-<div class="sourceCode" id="cb69"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">datas</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">simulated_data</span>, <span class="va">emperical_data</span>, <span class="va">meane</span>, <span class="va">means</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">datas</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">simulated_data</span>, <span class="va">emperical_data</span>, <span class="va">meane</span>, <span class="va">means</span><span class="op">)</span></code></pre></div>
 <p>Now using the function comparison:</p>
-<div class="sourceCode" id="cb70"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/comparision.html">comparision</a></span><span class="op">(</span>datasdf <span class="op">=</span> <span class="va">datas</span><span class="op">)</span></code></pre></div>
 <p><img src="Neupane_R_package_Tutorials_files/figure-html/unnamed-chunk-14-1.png" width="700"></p>
 <p>Including plots: <img src="Neupane_R_package_Tutorials_files/figure-html/datas-1.png" width="700"></p>
 <p>Calculating the effect size:</p>
-<div class="sourceCode" id="cb71"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/Effect_size.html">Effect_size</a></span><span class="op">(</span>datasdf <span class="op">=</span> <span class="va">datas</span><span class="op">)</span></code></pre></div>
-<pre><code><span class="co">## [1] NA</span></code></pre>
+<pre><code><span class="co">## [1] 0.974092</span></code></pre>
 </div>
 <div class="section level2">
 <h2 id="working-example">Working Example<a class="anchor" aria-label="anchor" href="#working-example"></a>

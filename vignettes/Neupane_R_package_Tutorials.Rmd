@@ -102,7 +102,7 @@ Compare the simulated data with emperical data:
 
 Create a dataframe to store all your data:
 ```{r}
-datas <- data.frame(c(simulated_data, emperical_data, meane, means))
+datas <- data.frame(simulated_data, emperical_data, meane, means)
 
 ```
 

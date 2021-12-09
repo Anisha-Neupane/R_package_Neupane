@@ -6,10 +6,8 @@
 #' @return result
 #' @export
 #' @usage 
-#' i = 1
-#' while (i <=20) { 
-#' trees[i] <- (Simulation(n = 10, numbsim = 2, lambda[i], mu[i], psi[i], frac = .01))
-#' }
+#'Simulation(n = 10, numbsim = 2, lambda = 0.01806175, mu = 1.078013e-03, psi = 5.172419e-02, frac = .01))
+#' 
 
 
 Simulation <- function(n, numbsim, lambda, mu, psi, frac){ 
